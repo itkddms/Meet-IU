@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+    
+}
+
+/* 세로축 스크롤 방지 */
+body{
+    overflow-y: hidden;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #150F25;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    top: 0;
+    width: 1680px;
+    height: 120px;
+    z-index: 100;
+    margin-left: calc((1920px - 1680px) / 2);
+    /* border: rgb(255, 0, 0) 3px solid; */
+}
+
+nav{
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    border: rgb(255, 0, 0) 3px solid;
+}
+
+.logo a{
+    z-index: 0;
+    font-family: 'Praise', cursive;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    display: cover;
+}
+
+#menu {
+    left: 0px;
+    width: 47px;
+    height: 33px;
+    border: none;
+    background-size: cover;
+    background-color: transparent;
+    background-image: url(https://i.postimg.cc/j5w7krYK/image.png);
+}
+
+#menu img{
+    left: 0px;
+    width: 47px;
+    height: 33px;
+}
+
+#menu, #modalCloseButton {
+    cursor: pointer;
+  }
+  
+  #modalContainer {
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  #modalContent {
+    position: absolute;
+    background-color: transparent;
+    top: 260px;
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+  }
+
+  #modalContent ul li{
+    list-style: none;
+  }
+  
+
+  #modalContent a{
+    line-height: 100px;
+    text-decoration-line: underline;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  #modalContainer.hidden {
+    display: none;
+  }
+
+  #modalCloseButton{
+    position: fixed;  /* 뷰포트에 대해 고정된 위치로 설정 */
+    top: 30px;         /* 상단에서의 위치 조절 */
+    right: 110px;  
+    background-image: url(https://i.postimg.cc/wxWR7jb3/image.png);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 54px;
+    height: 54px;
+    
+  }
+
+  @media (max-width:500px){
+    main{
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        position: relative;
+        /* border: red solid 3px; */
+    }
+
+
+    header{
+        /* border: red solid 3px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        width: 440px;
+        margin-left: calc((100vw - 440px) / 2);
+        height: 100px;
+        z-index: 100;
+        /* border: rgb(0, 0, 0) 3px solid; */
+    }
+
+    .background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .background .video{
+        left: 250px;
+        width: 140%;
+        height: 100%;
+    }
+
+    .logo a{
+        font-family: 'Praise', cursive;
+        font-weight: 500;
+        font-size: 44px;
+        text-decoration: none;
+        color: white;
+        display: cover;
+    }
+
+    #menu {
+        left: 0px;
+        width: 42px;
+        height: 28px;
+        border: none;
+        background-size: cover;
+        background-color: transparent;
+        background-image: url(https://i.postimg.cc/j5w7krYK/image.png);
+    }
+    
+    #menu img{
+        left: 0px;
+        width: 42px;
+        height: 28px;
+    }
+
+    #modalContent {
+        position: absolute;
+        background-color: transparent;
+        top: 260px;
+        width: 200px;
+        height: 150px;
+        padding: 15px;
+      }
+    
+      #modalContent a{
+        line-height: 80px;
+        text-decoration-line: underline;
+        padding-top: 380px;
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+      }
+      
+      #modalContainer.hidden {
+        display: none;
+      }
+    
+      #modalCloseButton{
+        position: fixed;  /* 뷰포트에 대해 고정된 위치로 설정 */
+        top: 20px;         /* 상단에서의 위치 조절 */
+        right: 30px;  
+        background-image: url(https://i.postimg.cc/wxWR7jb3/image.png);
+        background-color: transparent;
+        background-size: cover;
+        border: none;
+        width: 46px;
+        height: 46px;
+      }
+
+      
+
+    .hero{
+        width: 400px;
+        margin-top: auto;
+        margin-left: auto;
+        text-align: left;
+       
+        z-index: 100;
+    }
+    
+    .hero h1{
+        /* border: red solid 3px; */
+        padding-top: 460px;
+        font-size: 50px;
+        color: white;
+    }
+    
+    .hero h2{
+        padding-top:10px;
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+    }
+}
+
+
+
+.content{
+    position: relative;
+    width: 100%;
+    margin-left: calc((1920px - 1680px) / 2);
+    /* border: red 2px solid;  */
+    z-index: 1000;
+
+    display: flex;
+}
+
+.album{
+    margin-top: 28px;
+    left: 0;
+}
+
+.cd{
+    top: 0;
+    left: 360px;
+    z-index: -10;
+    position: absolute;
+    transition: all ease 0.2s ;
+   
+}
+
+.rotate {
+    animation: rotate 10s linear infinite;
+  }
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+
+    
+}
+.cd img{
+    width: 820px;
+    height: 820px;
+}
+
+.right{
+    margin-top: 180px;
+    margin-left: 180px;
+    width: 720px;
+    height: 770px;
+    position: relative;
+    /* border: rgb(251, 255, 0) solid 4px; */
+}
+
+.sub-title{
+    color:#A975FF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.main-title{
+    color:#ffffff;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+/* 노래 재생 */
+.play{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline;
+    background-image: url(https://i.postimg.cc/GthpSgnQ/Group-48.png);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 116px;
+    height: 116px;
+    transition: ease-in-out 0.4s;
+}
+
+.play:hover{
+    transform: scale(1.04);
+}
+.pause{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline;
+    background-image: url(https://i.postimg.cc/nz1z2bgr/Group-49.png);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 116px;
+    height: 116px;
+    
+}
+
+.pause:hover{
+    transform: scale(1.04);
+}
+
+/* js에서 사라지게하기위한 코드 ㅠㅠㅠ */
+.invisible{
+    display: none;
+}
+
+
+
+/* 노래 재생 끝 */
+
+.info{
+    margin-top: 55px;
+}
+
+.info-content{
+    gap: 20px;
+}
+.info-content{
+    display: flex;
+}
+.info-title{
+    line-height: 56px;
+    padding-bottom: 24px;
+    color:#A975FF;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.info-detail{
+    margin-left: 30px;
+    line-height: 56px;
+    position: relative;
+    color:#ffffff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.song{
+    display: flex;
+    margin-top: 10px;
+    line-height: 36px;
+}
+
+.song_2{
+    width: 290px;
+    position: absolute;
+    left: 300px;
+    line-height: 36px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+  
+    body, main {
+        overflow-y: auto !important;
+        height: 100vh;
+    }
+.content{
+    position: relative;
+    width: 440px;
+    margin-left: calc((100vw - 440px) / 2);
+    /* border: red 2px solid;  */
+    z-index: 1000;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.album{
+    margin-top: 28px;
+    left: 0;
+}
+
+.album img{
+    width: 320px;
+    height: 330px;
+}
+.cd{
+    top: 14px;
+    left: 100px;
+    z-index: -10;
+    position: absolute;
+    transition: all ease 0.2s ;
+   
+}
+
+.rotate {
+    animation: rotate 10s linear infinite;
+  }
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+
+    
+}
+.cd img{
+    width: 360px;
+    height: 360px;
+}
+
+.right{
+    position: absolute;
+    top: 230px;
+    margin-left: auto;
+    width: 100%;
+
+   
+    
+    /* border: rgb(251, 255, 0) solid 4px; */
+}
+
+.sub-title{
+    color:#A975FF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.main-title{
+    color:#ffffff;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* 노래 재생 */
+.play{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline;
+    background-image: url(https://i.postimg.cc/GthpSgnQ/Group-48.png);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 80px;
+    height: 80px;
+    transition: ease-in-out 0.2s;
+}
+
+.play:hover{
+    transform: scale(1.04);
+}
+.pause{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline;
+    background-image: url(https://i.postimg.cc/nz1z2bgr/Group-49.png);
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 80px;
+    height: 80px;
+    transition: ease-in-out 0.2s;
+    
+}
+
+.pause:hover{
+    transform: scale(1.04);
+}
+
+/* js에서 사라지게하기위한 코드 ㅠㅠㅠ */
+.invisible{
+    display: none;
+}
+
+
+
+/* 노래 재생 끝 */
+
+.info{
+    margin-top: 28px;
+}
+
+.info-content{
+    gap: 20px;
+}
+.info-content{
+    display: flex;
+}
+.info-title{
+    width: 100px;
+    line-height: 40px;
+    padding-bottom: 24px;
+    color:#A975FF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.info-detail{
+    margin-left: 30px;
+    line-height: 40px;
+    position: relative;
+    color:#ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.song{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2px;
+    line-height: 36px;
+}
+
+.song_2{
+    width: 100%;
+    position: static;
+    left: 300px;
+    line-height: 36px;
+}
+
+
+}

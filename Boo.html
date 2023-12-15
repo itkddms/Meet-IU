@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boo</title>
+    <link href="Boo.css" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Gothic:wght@800&family=Poppins:wght@300&family=Praise&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <main>
+    <header>
+        <div class="logo">
+            <a href="index.html">Meet IU</a>
+            </div>
+            <button type="button" id="menu"></button>
+    </header>
+
+    <div id="modalContainer" class="hidden">
+        <div id="modalContent">
+            <ul>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="acting.html">ACTING</a></li>
+                <li><a href="award.html">AWARDS</a></li>
+                <li><a href="interview.html">INTERVIEW</a></li>
+            </ul>
+          <button id="modalCloseButton"></button>
+        </div>
+      </div>
+
+    
+    <div class="content">
+        <div class="left">
+            <div class="album">
+                <img src="https://i.postimg.cc/4yfJVLbQ/Group-14.png">
+            </div>
+            <div class="cd">
+                <img src="https://i.postimg.cc/Pr9hsZ3b/Group-23.png">
+            </div>
+        </div>
+        <div class="right">
+            <div class="title">
+                <div class="sub-title">THE 1ST ALBUM</div>
+                <div class="main-title">Growing UP</div>
+            </div>
+            <!-- 오디오 -->
+            <audio id="audioContainer">
+                <source id="audioSource" src="IU_BOO.mp3">
+            </audio>
+            <div class="audio">
+                <button class="play"></button>
+                <button class="pause"></button>
+            </div>
+             <!-- 오디오 끝 -->
+            <div class="info">
+                <div class="info-content">
+                    <div class="info-title">
+                        타이틀 곡<br>발매일<br>기획사<br>장르<br>수록곡
+                    </div>  
+                    <div class="info-detail">
+                        Boo<br>2009. 04. 23<br>카카오엔터테인먼트<br>
+                        발라드, 댄스<br>
+                        <div class="song">
+                        01&nbsp;바라보기<br>
+                        02&nbsp; Boo<br>
+                        03&nbsp; 가여워<br>
+                        04&nbsp; A Dreamer<br>
+                        05&nbsp; Every Sweet Day<br>
+                        06&nbsp; 미아<br>
+                        07&nbsp; 나 말고 넷<br>
+                        08&nbsp; 있잖아 (Feat. 마리오)
+                        <div class="song_2">
+                            09&nbsp;졸업하는 날<br>
+                            10&nbsp; Feel So Good<br>
+                            11&nbsp; 미운 오리<br>
+                            12&nbsp; 마주보기 (바라보기 그 후)<br>
+                            13&nbsp; 미아 (Acoustic Ver.)<br>
+                            14&nbsp; 있잖아 (Rock Ver.)<br>
+                            15&nbsp; Boo (Inst.)<br>
+                            16&nbsp; 가여워 (inst.)<br>
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        
+    
+    
+    </main>
+    
+    
+    <script src="Boo.js"></script>
+</body>
+</html>

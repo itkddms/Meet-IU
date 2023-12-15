@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity</title>
+    <link href="Celebrity.css" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Gothic:wght@800&family=Poppins:wght@300&family=Praise&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <main>
+    <header>
+        <div class="logo">
+            <a href="index.html">Meet IU</a>
+            </div>
+            <button type="button" id="menu"></button>
+    </header>
+
+    <div id="modalContainer" class="hidden">
+        <div id="modalContent">
+            <ul>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="acting.html">ACTING</a></li>
+                <li><a href="award.html">AWARDS</a></li>
+                <li><a href="interview.html">INTERVIEW</a></li>
+            </ul>
+          <button id="modalCloseButton"></button>
+        </div>
+      </div>
+
+    
+    <div class="content">
+        <div class="left">
+            <div class="album">
+                <img src="https://i.postimg.cc/1tSqt3Tx/s-14.png">
+            </div>
+            <div class="cd">
+                <img src="https://i.postimg.cc/Pr9hsZ3b/Group-23.png">
+            </div>
+        </div>
+        <div class="right">
+            <div class="title">
+                <div class="sub-title">[LILAC] Pre-Release Single</div>
+                <div class="main-title">Celebrity</div>
+            </div>
+            <!-- 오디오 -->
+            <audio id="audioContainer">
+                <source id="audioSource" src="IU_Celebrity.mp3">
+            </audio>
+            <div class="audio">
+                <button class="play"></button>
+                <button class="pause"></button>
+            </div>
+             <!-- 오디오 끝 -->
+            <div class="info">
+                <div class="info-content">
+                    <div class="info-title">
+                        타이틀 곡<br>발매일<br>기획사<br>장르
+                    </div>  
+                    <div class="info-detail">
+                        Celebrity<br>2021. 01. 27<br>이담엔터테인먼트<br>
+                        댄스<br>
+                
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        
+    
+    
+    </main>
+    
+    
+    <script src="Celebrity.js"></script>
+</body>
+</html>
