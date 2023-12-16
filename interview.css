@@ -432,8 +432,9 @@ content{
 
 
 
-@media (max-width:520px){
+@media (max-width:500px){
 .interview{
+    width: 440px;
     margin-top: 80px;
     margin-bottom: 500px;
     display: flex;
